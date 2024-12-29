@@ -1,0 +1,18 @@
+Создаем папку app
+Помечаем папку app как корневую (Mark Directory as -> Sources Root)
+В папке app создаю файл server.py
+Для запуска FastApi необходимо установить библиотеку uvicorn (pip install uvicorn)
+Запуск uvicorn - uvicorn {путь до приложения} (команда в terminal - uvicorn server:app)
+Настройка запуска uvicorn в Pycharm - Run -> Edit Configurations -> Add new configurations -> Python ->
+                                      ввод Name -> вместо script выбираем module -> имя модуля uvicorn ->
+                                      в поле parametrs - server:app -> рабочая директория - папка app
+
+Для эмуляции клиента:
+В папке app создаю файл client.py
+Устанавливаем библиотеку requests (pip install requests)
+Устанавливаем библиотеку sqlalchemy (pip install sqlalchemy)
+Устанавливаем драйвер библиотеку asyncpg (pip install asyncpg)
+Устанавливаем библиотеку fastapi (pip install fastapi)
+
+
+### config.py - конфигурация проекта (информация о БД, PG_DSN)
